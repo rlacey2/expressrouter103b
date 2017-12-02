@@ -1,0 +1,9 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: eu-gb.mybluemix.net
+  name: expressrouter103bx3
+  host: expressrouter103bx3
+  command: node server.js
+  disk_quota: 256M
