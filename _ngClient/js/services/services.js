@@ -1,4 +1,4 @@
- 4
+
  angularnodeApp.service('cloudService', ['$http', '$q', function ($http, $q) {	
  
     function get(options)

@@ -15,6 +15,8 @@ console.log("angularnodeApp.config")	  // runs once only
 //  Force AngularJS to call our JSON Web Service with a 'GET' rather than an 'OPTION' 
 //  Taken from: http://better-inter.net/enabling-cors-in-angular-js/	  
     $httpProvider.defaults.useXDomain = true;
+	$locationProvider.hashPrefix(''); // prevents #! with Angular 1.6.x	
+	
     delete $httpProvider.defaults.headers.common['X-Requested-With'];	  
 
 			$routeProvider.					
